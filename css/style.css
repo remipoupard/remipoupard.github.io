@@ -12,57 +12,17 @@ body {
     position: relative; /* Ajout de position relative */
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px; /* Espace entre les carrés */
-    background-color: #60b6ef;
-}
-
-.section .image{
-    display: flex;
-    justify-items: center;
+header {
+    background-color: #1d375e;
+    color: #ecf0f1;
+    padding: 1em 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre sous le header */
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-.section .container{
-    background-color: #5483b3;
-    padding: 15px;
-    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
-}
-
-
-.section .image {
-    display: flex;
-    justify-content: center; /* Utilisation de justify-content au lieu de justify-items */
-    align-items: center; /* Pour centrer verticalement l'image */
-}
-
-.image {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #5483b3;
-    padding: 15px;
-    justify-self: center; /* Suppression de cette ligne */
-    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
-}
-
-.image img {
-    width: 350px; /* Pour que l'image ne dépasse pas la largeur du conteneur */
-    height: auto;
-    display: block; /* Pour supprimer l'espace réservé en dessous de l'image */
-    margin: 0 auto; /* Pour centrer l'image horizontalement */
-}
-
-header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 1em 0;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre sous le header */
+    border-radius: 10px;
 }
 
 nav ul {
@@ -88,20 +48,66 @@ nav a:hover {
     color: #3498db;
 }
 
-main {
-    padding: 40px 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; /* Espace entre les carrés */
+    background-color: #133d7c;
 }
 
 .section {
     padding: 60px 0;
 }
 
+main {
+    padding: 40px 0;
+}
+
+.section .container{
+    background-color: #032250;
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
+}
+
+.section .image{
+    display: flex;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.section .image {
+    display: flex;
+    justify-content: center; /* Utilisation de justify-content au lieu de justify-items */
+    align-items: center; /* Pour centrer verticalement l'image */
+}
+
+.image {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #032250;
+    padding: 15px;
+    justify-self: center; /* Suppression de cette ligne */
+    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
+}
+
+.image img {
+    width: 350px; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+    height: auto;
+    display: block; /* Pour supprimer l'espace réservé en dessous de l'image */
+    margin: 0 auto; /* Pour centrer l'image horizontalement */
+    border-radius: 10px;
+}
+
 h2 {
-    color: #2c3e50;
+    color: #4589ce;
+}
+
+p {
+    color: #3d90e4;
 }
 
 footer {
-    background-color: #34495e;
+    background-color: #1d375e;
     color: #ecf0f1;
     text-align: center;
     padding: 1em 0;
