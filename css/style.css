@@ -1,0 +1,142 @@
+/*{
+    border: violet solid 2px;
+}*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #133d7c;
+    color: #333;
+    position: relative; /* Ajout de position relative */
+}
+
+header {
+    background-color: #1d375e;
+    color: #ecf0f1;
+    padding: 1em 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre sous le header */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #016c86;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; /* Espace entre les carrés */
+}
+
+.section {
+    padding: 15% 0;
+    padding-top: 0% ;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.section .container{
+    background-color: #032250;
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
+    border: rgb(94, 84, 236) solid 2px;
+}
+
+.section .image{
+    display: flex;
+    justify-items: center;
+    border-radius: 10px;
+    border: rgb(94, 84, 236) solid 2px;
+}
+
+.section .image {
+    display: flex;
+    justify-content: center; /* Utilisation de justify-content au lieu de justify-items */
+    align-items: center; /* Pour centrer verticalement l'image */
+}
+
+.image {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #032250;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(32, 68, 119, 0.767);
+}
+
+
+.image img {
+    width: 75%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+    height: auto;
+    display: block; /* Pour supprimer l'espace réservé en dessous de l'image */
+    margin: 0 auto; /* Pour centrer l'image horizontalement */
+    border-radius: 10px;
+}
+
+#projetImg img{
+    width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+    height: auto;
+    padding-bottom: 1%;
+}
+
+h2 {
+    color: #4589ce;
+}
+
+p {
+    color: #3d90e4;
+}
+
+footer {
+    background-color: #1d375e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute; /* Position absolue par rapport au corps (body) */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #ecf0f1;
+}
