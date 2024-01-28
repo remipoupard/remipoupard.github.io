@@ -159,6 +159,13 @@ footer p {
         padding: 1% 0; /* Adjust section padding for smaller screens */
     }
 
+    .section .image{
+        border: #000000 solid 2px;
+    }
+    .section .container{
+        border: #000000 solid 2px;
+    }
+
     #proposTxt{
         order: 1;
     }
@@ -167,11 +174,11 @@ footer p {
     }
 
     #projetImg {
-        order: 3; /* Nouvel ordre pour #projetImg */
+        order: 4; /* Nouvel ordre pour #projetImg */
     }
 
     #projetTxt {
-        order: 4; /* Nouvel ordre pour #projetTxt */
+        order: 3; /* Nouvel ordre pour #projetTxt */
     }
 
     #servicesTxt{
