@@ -136,3 +136,50 @@ footer p {
     color: #ecf0f1;
     text-align: center;
 }
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 0.5em 0; /* Adjust header padding for smaller screens */
+    }
+
+    .container, .image{
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items for smaller screens */
+        margin: 10px 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* Change to a single column for mobile */
+    }
+
+    .section {
+        padding: 1% 0; /* Adjust section padding for smaller screens */
+    }
+
+    #proposTxt{
+        order: 1;
+    }
+    #proposImg{
+        order: 2;
+    }
+
+    #projetImg {
+        order: 3; /* Nouvel ordre pour #projetImg */
+    }
+
+    #projetTxt {
+        order: 4; /* Nouvel ordre pour #projetTxt */
+    }
+
+    #servicesTxt{
+        order: 5;
+    }
+
+    #contactTxt {
+        order: 6;
+        margin-bottom: 20%;
+    }
+}
