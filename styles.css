@@ -5,20 +5,20 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Ajoute un défilement doux */
+    scroll-behavior: smooth;
 }
 
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Couleur de fond plus claire */
+    background-color: #f0f0f0; 
     padding: 20px;
 }
 
 .header {
     text-align: center;
-    background: linear-gradient(135deg, #6a5acd, #ff7f50); /* Dégradé coloré */
+    background: linear-gradient(135deg, #5c7bec, #0f0265);
     color: white;
     padding: 30px 0;
     border-radius: 10px;
@@ -35,17 +35,17 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
-    border: 3px solid white; /* Bordure blanche autour de l'image */
-    transition: transform 0.3s ease; /* Animation d'échelle avec transition douce */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour plus de profondeur */
+    border: 3px solid white;
+    transition: transform 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .profile-pic:hover {
-    transform: scale(1.1); /* Zoom au survol */
+    transform: scale(1.1);
 }
 
 .nav {
-    background-color: #007bff; /* Couleur de fond du menu */
+    background-color: #007bff; 
     text-align: center;
     padding: 15px 0;
     border-radius: 10px;
@@ -68,12 +68,12 @@ body {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.3s; /* Transition pour l'effet de survol */
+    transition: background 0.3s, transform 0.3s; 
 }
 
 .nav ul li a:hover {
-    background: #0056b3; /* Changement de couleur au survol */
-    transform: scale(1.05); /* Zoom au survol */
+    background: #0056b3; 
+    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -84,11 +84,11 @@ body {
 }
 
 .left-column {
-    flex: 0 0 60%; /* Largeur de la colonne gauche */
+    flex: 0 0 55%;
 }
 
 .right-column {
-    flex: 0 0 39%; /* Largeur de la colonne droite */
+    flex: 0 0 44%;
 }
 
 .section {
@@ -97,39 +97,40 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Position relative pour les effets d'animation */
+    position: relative; 
     transform: translateY(0px);
     transition: transform 0.3s ease;
 }
 
 .left-column section:hover {
     transform: translateY(-5px);
-    transition: transform 0.3s ease; /* Transition douce */
+    transition: transform 0.3s ease; 
 }
 
 .section h2 {
     margin-bottom: 15px;
-    color: #343a40; /* Couleur sombre pour les titres */
-    border-bottom: 2px solid #17a2b8; /* Ligne sous le titre */
+    color: #343a40; 
+    border-bottom: 2px solid #17a2b8; 
     padding-bottom: 10px;
 }
 
 .section i {
-    margin-right: 10px; /* Espacement pour les icônes */
+    margin-right: 10px; 
 }
 .project {
     display: flex;
-    align-items: center; /* Centrer verticalement les images et le texte */
+    flex-direction: column;
+    align-items: center; 
     gap: 15px;
     margin-bottom: 15px;
 }
 
 .project-image {
-    width: 100%; /* Gardez la largeur à 100% du conteneur */
-    height: 100%; /* Augmentez la hauteur à 150px pour plus de visibilité */
+    height: 100%;
+    width: auto;
     border-radius: 5px;
     object-fit: cover;
-    transition: transform 0.3s ease; /* Animation d'échelle avec transition douce */
+    transition: transform 0.3s ease; 
 }
 
 .project-image:hover {
