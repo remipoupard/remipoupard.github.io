@@ -13,13 +13,13 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                     "<strong>Âge :</strong> 18 ans",
                     "<strong>Email </strong>: remi.poupard@proton.me",
                     "<strong>Téléphone </strong>: +33 6 95 40 05 93",
-                    "<strong>Adresse :</strong> 73 rue de Dieppe, Lille"
+                    "<p><strong>Adresse :</strong> 73 rue de Dieppe, Lille</p>"
                 ],
                 en: [
                     "<strong>Age:</strong> 18 years",
                     "<strong>Email </strong>: remi.poupard@proton.me",
                     "<strong>Phone </strong>: +33 6 95 40 05 93",
-                    "<strong>Address :</strong> 73 rue de Dieppe, Lille"
+                    "<p><strong>Address :</strong> 73 rue de Dieppe, Lille</p>"
                 ]
             }
         },
