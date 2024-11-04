@@ -1,8 +1,9 @@
-let isEnglish = false; // État de la langue, faux par défaut (français)
+let isEnglish = false;
 
 document.getElementById("translate-btn").addEventListener("click", function() {
-    // Objets de contenu pour les deux langues
+
     const sections = {
+
         "etat-civil": {
             title: {
                 fr: "<i class=\"fas fa-id-card\"></i> État Civil",
@@ -23,6 +24,7 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                 ]
             }
         },
+
         "formation": {
             title: {
                 fr: "<i class=\"fas fa-graduation-cap\"></i> Formation",
@@ -39,6 +41,7 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                 ]
             }
         },
+        
         "competences": {
             title: {
                 fr: "<i class=\"fas fa-cogs\"></i> Compétences",
@@ -61,6 +64,7 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                 ]
             }
         },
+
         "experiences": {
             title: {
                 fr: "<i class=\"fas fa-briefcase\"></i> Expériences",
@@ -79,6 +83,7 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                 ]
             }
         },
+
         "centres-interets": {
             title: {
                 fr: "<i class=\"fas fa-heart\"></i> Centres d’Intérêts",
@@ -101,6 +106,7 @@ document.getElementById("translate-btn").addEventListener("click", function() {
                 ]
             }
         },
+
         "projets": {
             title: {
                 fr: "<i class=\"fas fa-folder-open\"></i> Projets",
@@ -108,14 +114,14 @@ document.getElementById("translate-btn").addEventListener("click", function() {
             },
             content: {
                 fr: [
-                    "Nom du projet 1 : Description du projet 1, mettant en avant les technologies utilisées et les résultats obtenus.",
-                    "Nom du projet 2 : Description du projet 2, soulignant son impact et son importance.",
-                    "Nom du projet 3 : Description du projet 3, avec les défis rencontrés et les leçons apprises."
+                    "<h3>Projet Annuaire</h3> <p>Développement d'une application d'annuaire en équipe, en utilisant la méthode Scrum. Gestion du projet par sprints réduit à deux heures et revues de sprint pour ajuster les priorités.</p>",
+                    "<h3>Projet RSE</h3> <p>Création en équipe d'un site web pour promouvoir la démarche RSE d'une entreprise, en utilisant HTML et CSS.</p>",
+                    "<h3>Projet Web Statique</h3> <p>Développement d'un site web statique en Java, centré sur la lecture et l'écriture de fichiers pour générer les pages HTML. Respect des délais de rendu de livrables pour assurer la livraison du projet dans les temps.</p>"
                 ],
                 en: [
-                    "Project Name 1: Description of project 1, highlighting the technologies used and the results obtained.",
-                    "Project Name 2: Description of project 2, emphasizing its impact and importance.",
-                    "Project Name 3: Description of project 3, with challenges encountered and lessons learned."
+                    "<h3>Directory Project</h3> <p>Development of a directory application as a team, using the Scrum method. Project management through two-hour sprints and sprint reviews to adjust priorities.</p>",
+                    "<h3>CSR Project</h3> <p>Team creation of a website to promote a company's CSR approach, using HTML and CSS.</p>",
+                    "<h3>Static Web Project</h3> <p>Development of a static website in Java, focused on reading and writing files to generate HTML pages. Adherence to delivery deadlines to ensure timely project delivery.</p>"
                 ]
             }
         }
