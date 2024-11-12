@@ -18,7 +18,7 @@ body {
 
 .header {
     text-align: center;
-    background: linear-gradient(135deg, #5c7bec, #0f0265);
+    background: linear-gradient(135deg, #252525, #646464);
     color: white;
     padding: 30px 0;
     border-radius: 10px;
@@ -79,17 +79,13 @@ body {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px;
+    max-width: 1200px; /* Limite la largeur pour éviter qu'il s'étende trop */
+    margin: 0 auto; /* Centre horizontalement dans la page */
+    padding: 20px;
 }
 
-.left-column {
-    flex: 0 0 55%;
-}
-
-.right-column {
-    flex: 0 0 44%;
-}
 
 .section {
     background-color: white;
@@ -102,14 +98,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.left-column section:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease; 
-}
-
 .section h2 {
     margin-bottom: 15px;
-    color: #343a40; 
+    color: #317bc5; 
     border-bottom: 2px solid #17a2b8; 
     padding-bottom: 10px;
 }

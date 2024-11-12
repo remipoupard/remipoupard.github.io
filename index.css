@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts and Colors */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1c1c1c;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #1b1b1b;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-info h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.subheading {
+    font-weight: 400;
+}
+
+/* Navigation */
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+}
+
+.nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.flag-btn img {
+    width: 30px;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li a img {
+    width: 30px;
+}
+
+.social-links li a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0 0 15px 0;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

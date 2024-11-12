@@ -3,133 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV Kwazy</title>
+    <title>CV - Rémi Poupard-Ramaut</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <h1>Rémi Poupard-Ramaut</h1>
-        <p>Étudiant en Informatique</p>
-        <img src="img/photo.png" alt="Photo de moi" class="profile-pic">
+        <div class="container">
+            <img src="img/photo.png" alt="Photo de Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Étudiant en Informatique</p>
+            </div>
+        </div>
     </header>
 
-    <nav id="nav" class="nav">
+    <nav class="nav">
         <ul>
-            <li><a href="#etat-civil" data-nav="etat-civil">État Civil</a></li>
-            <li><a href="#formation" data-nav="formation">Formation</a></li>
-            <li><a href="#competences" data-nav="competences">Compétences</a></li>
-            <li><a href="#experiences" data-nav="experiences">Expériences</a></li>
-            <li><a href="#centres-interets" data-nav="centres-interets">Centres d’Intérêts</a></li>
-            <li><a href="#projets" data-nav="projets">Projets</a></li>
+            <li><a href="./formation.html">Formation</a></li>
+            <li><a href="./competences.html">Compétences</a></li>
+            <li><a href="./experience.html">Expériences</a></li>
+            <li><a href="./centre-interets.html">Centres d’Intérêts</a></li>
+            <li><a href="./projets.html">Projets</a></li>
         </ul>
         <button id="translate-btn" class="flag-btn" title="Translate">
             <img src="img/uk-flag.png" alt="Translate">
         </button>
     </nav>
-    
 
     <main>
-        <div class="content-container">
-            <div class="left-column">
-                <section id="etat-civil" class="section etat-civil">
-                    <h2><i class="fas fa-id-card"></i> État Civil</h2>
-                    <p><strong>Âge :</strong> 18 ans</p>
-                    <p><strong>Email :</strong> remi.poupard@proton.me</p>
-                    <p><strong>Téléphone :</strong> +33 6 95 40 05 93</p>
-                    <p><strong>Adresse :</strong> 73 rue de Dieppe, Lille</p>
-                </section>
-
-                <section id="formation" class="section formation">
-                    <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
-                    <ul>
-                        <li>2023 - maintenant: BUT Informatique - Université de Lille</li>
-                        <li>2020 - 2023 : Baccalauréat Général - Lycée International Montebello</li>
-                    </ul>
-                </section>
-
-                <section id="competences" class="section competences">
-                    <h2><i class="fas fa-cogs"></i> Compétences</h2>
-                    <ul>
-                        <li>Développement Web (HTML, CSS, JavaScript)</li>
-                        <li>Langages de programmation (Python, Java, C++)</li>
-                        <li>Gestion de bases de données (SQL, MongoDB)</li>
-                        <li>Design UI/UX</li>
-                        <li>Gestion de projet</li>
-                    </ul>
-                </section>
-
-                <section id="centres-interets" class="section centres-interets">
-                    <h2><i class="fas fa-heart"></i> Centres d’Intérêts</h2>
-                    <ul>
-                        <li>Voyages</li>
-                        <li>Photographie</li>
-                        <li>Lecture de science-fiction</li>
-                        <li>Développement personnel</li>
-                        <li>Sports (Football, Course à pied)</li>
-                    </ul>
-                </section>
-
-                <section id="experiences" class="section experiences">
-                    <h2><i class="fas fa-briefcase"></i> Expériences Professionnelles</h2>
-                    <ul>
-                        <li><strong>Développeur Web</strong> - Entreprise ABC (2023 - Présent)
-                            <p>Développement de sites web responsives et optimisation des performances.</p>
-                        </li>
-                        <li><strong>Stagiaire en Informatique</strong> - Entreprise XYZ (2022 - 2023)
-                            <p>Participation à des projets de développement logiciel.</p>
-                        </li>
-                        <li><strong>Assistant de Recherche</strong> - Université de Lille (2021 - 2022)
-                            <p>Aide à la recherche en informatique théorique.</p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="right-column">
-                <section id="projets" class="section projets">
-                    <h2><i class="fas fa-folder-open"></i> Projets</h2>
-                    <div class="carousel">
-                        <div class="carousel-images">
-                            <div class="carousel-item">
-                                <img src="img/secq.jpg" alt="Projet Annuaire" class="carousel-image">
-                                <div class="carousel-description">
-                                    <h3>Projet Annuaire</h3>
-                                    <p>Développement d'une application d'annuaire en équipe, en utilisant la méthode Scrum.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/secq.jpg" alt="Projet RSE" class="carousel-image">
-                                <div class="carousel-description">
-                                    <h3>Projet RSE</h3>
-                                    <p>Création d'un site web pour promouvoir la démarche RSE d'une entreprise en HTML et CSS.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/secq.jpg" alt="Projet Web Statique" class="carousel-image">
-                                <div class="carousel-description">
-                                    <h3>Projet Web Statique</h3>
-                                    <p>Développement d'un site web statique en Java, intégrant la gestion de fichiers.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-                        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </section>                
-            </div>
-        </div>
+        <section id="etat-civil" class="section etat-civil">
+            <h2><i class="fas fa-id-card"></i> État Civil</h2>
+            <p><strong>Âge :</strong> 18 ans</p>
+            <p><strong>Email :</strong> <a href="mailto:remi.poupard@proton.me">remi.poupard@proton.me</a></p>
+            <p><strong>Téléphone :</strong> +33 6 95 40 05 93</p>
+            <p><strong>Adresse :</strong> 73 rue de Dieppe, Lille</p>
+        </section>
     </main>
 
     <footer class="footer">
-        <nav id="link" class="link">
-            <ul>
-                <li><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a></li>
-                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="./img/gitlab.png" alt="Gitlab"></a></li>
-                <li><a href="cv/CV.pdf" download="cv/CV.pdf" target="_blank"><img src="./img/cv.png" alt="CV"></a></li>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="img/cv.png" alt="Télécharger CV"></a></li>
             </ul>
-        </nav>
+        </div>
     </footer>
 
     <script src="trad.js"></script>
