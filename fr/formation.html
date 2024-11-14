@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation - Rémi Poupard-Ramaut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/photo.png" alt="Photo de Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Étudiant en Informatique à Lille</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav" class="nav">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./formation.html" data-nav="formation">Formation</a></li>
+            <li><a href="./competences.html" data-nav="competences">Compétences</a></li>
+            <li><a href="./centre-interets.html" data-nav="centres-interets">Centres d’Intérêts</a></li>
+            <li><a href="./projets.html" data-nav="projets">Projets</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button onclick="window.location.href='../en/education.html'" id="translate-btn" class="flag-btn" title="Translate">
+            <img src="../img/uk-flag.png" alt="Translate">
+        </button>
+    </nav>
+    
+    <main>
+        <div class="content-container">
+            <section id="formation" class="section formation">
+                <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+                
+                <div class="formation-card">
+                    <h3>2023 - maintenant</h3>
+                    <h4>BUT Informatique</h4>
+                    <p>Université de Lille</p>
+                    <p>En 2ème année de Bachelor Universitaire de Technologie en Informatique, parcours A. Formation orientée vers le développement logiciel, les systèmes d'information et la gestion de projets informatiques.</p>
+                    
+                    <details>
+                        <summary>En savoir plus</summary>
+                        <p>Voici quelques liens utiles pour mieux comprendre cette formation et l'établissement :</p>
+                        <ul>
+                            <li><a href="https://www.univ-lille.fr" target="_blank">Université de Lille</a></li>
+                            <li><a href="https://iut.univ-lille.fr" target="_blank">IUT de Lille</a></li>
+                            <li><a href="https://www.univ-lille.fr/formations/fr-00082372" target="_blank">Bachelor Informatique</a></li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="formation-card">
+                    <h3>2020 - 2023</h3>
+                    <h4>Baccalauréat Général</h4>
+                    <p>Lycée International Montebello</p>
+                    <p>Spécialité Numérique et Sciences Informatique (NSI) et langues Littératures et Civilisations Etrangères et Régionales - Anglais Monde Contemporain (LLCER-AMC) en Terminale. Spécialité Sciences Economique et Sociales en plus en Première. Mention assez bien.</p>
+                    
+                    <details>
+                        <summary>En savoir plus</summary>
+                        <p>Voici quelques liens utiles pour mieux comprendre cette formation et l'établissement :</p>
+                        <ul>
+                            <li><a href="https://lgt-international-montebello-lille.59.ac-lille.fr" target="_blank">Lycée Montebello - Site officiel</a></li>
+                            <li><a href="https://oniseptv.onisep.fr/video/la-specialite-numerique-et-sciences-informatiques-nsi#:~:text=Au%20lycée%2C%20en%20voie%20générale,des%20sites%20internet%2C%20des%20applications…" target="_blank">Spécialité NSI</a></li>
+                            <li><a href="https://cite-scolaire-st-exupery-bsm.web.ac-grenoble.fr/specialite-anglais-monde-contemporain#:~:text=La%20spécialité%20Anglais%20Monde%20Contemporain,techniques%20du%20monde%20anglophone%20contemporain." target="_blank">Spécialité LLCER-AMC</a></li>
+                            <li><a href="https://www.letudiant.fr/lycee/specialites-bac-general/article/presentation-et-programme-de-la-specialite-sciences-economiques-et-sociales-ses-en-classe-de-premiere.html" target="_blank">Spécialité SES</a></li>
+                        </ul>
+                    </details>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="../img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="../img/cv.png" alt="Download CV"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

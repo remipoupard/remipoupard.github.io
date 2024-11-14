@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rémi Poupard-Ramaut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/photo.png" alt="Photo of Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Computer Science Student in Lille</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./education.html" data-nav="formation">Education</a></li>
+            <li><a href="./skills.html" data-nav="competences">Skills</a></li>
+            <li><a href="./interests.html" data-nav="centres-interets">Interests</a></li>
+            <li><a href="./projects.html" data-nav="projets">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <button onclick="window.location.href='../fr/contact.html'" id="translate-btn" class="flag-btn" title="Translate">
+            <img src="../img/fr-flag.png" alt="Traduire">
+        </button>
+    </nav>
+
+    <main>
+        <section id="contact" class="section contact">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>If you have any questions, collaboration proposals, or would like to know more about my projects, feel free to contact me by filling out the form below, or by emailing me directly at my email address.</p>
+
+            <form action="mailto:remi.poupard@proton.me" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other ways to contact me:</h3>
+                <p>Email: <a href="mailto:remi.poupard@proton.me">remi.poupard@proton.me</a></p>
+                <p>Phone: <a href="tel:+33695400593">+33 6 95 40 05 93</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="../img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="../img/cv.png" alt="Download CV"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

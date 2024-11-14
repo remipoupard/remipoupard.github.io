@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Rémi Poupard-Ramaut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/photo.png" alt="Photo de Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Étudiant en Informatique à Lille</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./formation.html" data-nav="formation">Formation</a></li>
+            <li><a href="./competences.html" data-nav="competences">Compétences</a></li>
+            <li><a href="./centre-interets.html" data-nav="centres-interets">Centres d’Intérêts</a></li>
+            <li><a href="./projets.html" data-nav="projets">Projets</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button onclick="window.location.href='../en/index.html'" id="translate-btn" class="flag-btn" title="Translate">
+            <img src="../img/uk-flag.png" alt="Translate">
+        </button>
+    </nav>
+
+    <main>
+        <section id="presentation" class="section presentation">
+            <h2><i class="fas fa-user"></i> Présentation du site</h2>
+            <p>Bienvenue sur mon site web ! Ici, vous trouverez un aperçu de mon parcours en tant qu'étudiant en informatique. Ce site est une vitrine de mes expériences, compétences, projets et intérêts. Je partage ici mes réalisations et mes projets personnels, ainsi que des informations sur mon cursus et mes passions pour l'informatique.</p>
+        </section>
+
+        <section id="resume" class="section resume">
+            <h2><i class="fas fa-info-circle"></i> Qui suis-je ?</h2>
+            <p>Je m'appelle Rémi Poupard-Ramaut, j'ai 18 ans et je suis actuellement en deuxième année de BUT Informatique à l'Université de Lille. Passionné par les technologies, la programmation et l'innovation, je consacre une grande partie de mon temps à développer mes compétences dans divers domaines de l'informatique. Ce site est un moyen pour moi de partager mes projets, mes expériences professionnelles et mes passions avec vous.</p>
+            <p>Si vous avez des questions ou souhaitez en savoir plus sur mes travaux, n'hésitez pas à me contacter via la section <a href="../contact.html">Contact</a>.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="../img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="../img/cv.png" alt="Download CV"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

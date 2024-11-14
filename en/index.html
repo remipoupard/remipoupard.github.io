@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rémi Poupard-Ramaut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/photo.png" alt="Photo of Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Computer Science Student in Lille</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./education.html" data-nav="formation">Education</a></li>
+            <li><a href="./skills.html" data-nav="competences">Skills</a></li>
+            <li><a href="./interests.html" data-nav="centres-interets">Interests</a></li>
+            <li><a href="./projects.html" data-nav="projets">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <button onclick="window.location.href='../fr/index.html'"  id="translate-btn" class="flag-btn" title="Translate">
+            <img src="../img/fr-flag.png" alt="Traduire">
+        </button>
+    </nav>
+
+    <main>
+        <section id="presentation" class="section presentation">
+            <h2><i class="fas fa-user"></i> About the Site</h2>
+            <p>Welcome to my website! Here, you will find an overview of my journey as a computer science student. This site is a showcase of my experiences, skills, projects, and interests. I share my personal achievements and projects, as well as information about my studies and passion for computer science.</p>
+        </section>
+
+        <section id="resume" class="section resume">
+            <h2><i class="fas fa-info-circle"></i> Who am I?</h2>
+            <p>My name is Rémi Poupard-Ramaut, I am 18 years old, and I am currently in my second year of a Bachelor's Degree in Computer Science at the University of Lille. Passionate about technology, programming, and innovation, I dedicate much of my time to developing my skills in various areas of computer science. This site is a way for me to share my projects, professional experiences, and passions with you.</p>
+            <p>If you have any questions or would like to know more about my work, feel free to contact me through the <a href="../contact.html">Contact</a> section.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="../img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="../img/cv.png" alt="Download CV"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

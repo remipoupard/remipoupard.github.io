@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Rémi Poupard-Ramaut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/photo.png" alt="Photo de Rémi" class="profile-pic">
+            <div class="header-info">
+                <h1>Rémi Poupard-Ramaut</h1>
+                <p class="subheading">Étudiant en Informatique à Lille</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav" class="nav">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./formation.html" data-nav="formation">Formation</a></li>
+            <li><a href="./competences.html" data-nav="competences">Compétences</a></li>
+            <li><a href="./centre-interets.html" data-nav="centres-interets">Centres d’Intérêts</a></li>
+            <li><a href="./projets.html" data-nav="projets">Projets</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button onclick="window.location.href='../en/skills.html'" id="translate-btn" class="flag-btn" title="Translate">
+            <img src="../img/uk-flag.png" alt="Translate">
+        </button>
+    </nav>
+    
+    <main>
+        <div class="content-container">
+
+            <section id="competences" class="section competences">
+                <h2><i class="fas fa-cogs"></i> Compétences</h2>
+                <div class="competences-card">
+                    <h3>Développement Web</h3>
+                    <p>Compétences en HTML, CSS, JavaScript pour la création de sites web dynamiques et interactifs.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Langages de Programmation</h3>
+                    <p>Connaissance de plusieurs langages tels que Python, Java, et C++ pour le développement de logiciels et d'applications.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Gestion de bases de données</h3>
+                    <p>Maîtrise de SQL et MongoDB pour la gestion, la création et l'optimisation des bases de données.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Design UI/UX</h3>
+                    <p>Capacité à créer des interfaces utilisateurs attrayantes et intuitives tout en assurant une expérience utilisateur optimale.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Gestion de Projet</h3>
+                    <p>Compétence en gestion de projet, avec une approche agile pour organiser, planifier et mener à bien des projets informatiques.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://gitlab.univ-lille.fr/remi.poupard-ramaut.etu" target="_blank"><img src="../img/gitlab.png" alt="GitLab"></a></li>
+                <li><a href="cv/CV.pdf" download="CV Rémi Poupard" target="_blank"><img src="../img/cv.png" alt="Download CV"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
