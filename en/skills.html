@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Rémi Poupard-Ramaut</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -36,33 +35,93 @@
     
     <main>
         <div class="content-container">
-
             <section id="competences" class="section competences">
-                <h2><i class="fas fa-cogs"></i> Skills</h2>
+    
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'SoftSkills')" id="defaultOpen"><h2><i class="fas fa-cogs"></i> SoftSkills</h2></button>
+                <button class="tablinks" onclick="openCity(event, 'HardSkills')"><h2><i class="fas fa-cogs"></i> HardSkills</h2></button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="SoftSkills" class="tabcontent">
                 <div class="competences-card">
-                    <h3>Web Development</h3>
-                    <p>Skills in HTML, CSS, and JavaScript for creating dynamic and interactive websites.</p>
+                    <h3>Communication</h3>
+                    <p>Ability to communicate effectively, both orally and in writing, with teams, clients, and partners. Experience in presenting technical projects to non-specialized audiences.</p>
                 </div>
                 <div class="competences-card">
-                    <h3>Programming Languages</h3>
-                    <p>Knowledge of several programming languages such as Python, Java, and C++ for software and application development.</p>
+                    <h3>Teamwork</h3>
+                    <p>Strong team spirit and collaboration with colleagues to achieve common goals. Comfortable in agile and collaborative work environments, with a focus on cooperation and knowledge sharing.</p>
                 </div>
                 <div class="competences-card">
-                    <h3>Database Management</h3>
-                    <p>Proficiency in SQL and MongoDB for managing, creating, and optimizing databases.</p>
+                    <h3>Problem-solving</h3>
+                    <p>Ability to tackle and solve complex problems using an analytical and creative approach. Experience in finding innovative solutions to technical or organizational challenges.</p>
                 </div>
                 <div class="competences-card">
-                    <h3>UI/UX Design</h3>
-                    <p>Ability to create visually appealing and intuitive user interfaces while ensuring an optimal user experience.</p>
+                    <h3>Time Management</h3>
+                    <p>Ability to prioritize tasks and manage time efficiently in a dynamic environment. Experience with methods like agile project management and meeting deadlines.</p>
                 </div>
                 <div class="competences-card">
-                    <h3>Project Management</h3>
-                    <p>Skills in project management, with an agile approach to organizing, planning, and executing IT projects.</p>
+                    <h3>Adaptability</h3>
+                    <p>Great adaptability to new tools, technologies, and work environments. Flexible in the face of changes and ready to take on new challenges in a constantly evolving technological world.</p>
                 </div>
+            </div>
+    
+              
+              <div id="HardSkills" class="tabcontent">
+                <div class="competences-card">
+                    <h3>Python</h3>
+                    <p>Proficiency in Python for software development, task automation, and data processing scripts.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Java</h3>
+                    <p>Skills in Java for developing Java EE applications, including web and mobile applications.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>SQL</h3>
+                    <p>Knowledge of SQL for managing, optimizing, and creating relational databases. Skills in writing complex queries, transaction management, and database schema design.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>JEE (Java EE)</h3>
+                    <p>Experience with Java EE for developing scalable enterprise applications.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>Bash/Shell</h3>
+                    <p>Proficiency in using Bash/Shell scripts for automating system tasks, server management, and Linux/Unix system administration.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>HTML/CSS/JS</h3>
+                    <p>Strong skills in HTML, CSS, and JavaScript for creating interactive and responsive websites.</p>
+                </div>
+                <div class="competences-card">
+                    <h3>C</h3>
+                    <p>Proficiency in C language for developing system and embedded software. Experience in memory management and performance optimization for critical applications.</p>
+                </div>
+            </div>
+    
+              <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+              </script>
+              
             </section>
-
+    
         </div>
     </main>
+    
 
     <footer class="footer">
         <div class="container">
