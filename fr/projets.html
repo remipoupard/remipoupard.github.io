@@ -48,29 +48,49 @@
                             <div class="carousel-item">
                                 <img src="img/secq.jpg" alt="Projet Annuaire" class="carousel-image">
                                 <div class="carousel-description">
-                                    <h3>Projet Annuaire</h3>
+                                    <h3>Developpement d'un Annuaire et d'un planning</h3>
                                     <p>Développement d'une application d'annuaire en équipe, en utilisant la méthode Scrum.</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'un annuaire et d\'un planning', 'Description détaillée du projet Annuaire.')">Voir plus</button>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/secq.jpg" alt="Projet RSE" class="carousel-image">
                                 <div class="carousel-description">
-                                    <h3>Projet RSE</h3>
+                                    <h3>Developpement d'un site promouvant une démarche RSE</h3>
                                     <p>Création d'un site web pour promouvoir la démarche RSE d'une entreprise en HTML et CSS.</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'un site promouvant une démarche RSE', 'Description détaillée du projet Annuaire.')">Voir plus</button>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/secq.jpg" alt="Projet Web Statique" class="carousel-image">
                                 <div class="carousel-description">
-                                    <h3>Projet Web Statique</h3>
+                                    <h3>Developpement d'un générateur de site web statique</h3>
                                     <p>Développement d'un generateur de site web statique en Java, intégrant la gestion de fichiers.</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'un générateur de site web statique', 'Description détaillée du projet Annuaire.')">Voir plus</button>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/secq.jpg" alt="Projet Web Statique" class="carousel-image">
+                                <img src="img/secq.jpg" alt="Projet Jeu Ludo-Éducatif" class="carousel-image">
                                 <div class="carousel-description">
-                                    <h3>Projet Jeu Ludo-Éducatif</h3>
+                                    <h3>Developpement d'une Application de Classification</h3>
+                                    <p>Projet d'application permettant de classer des données selon l'algorithme KNN</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'une Application de Classification', 'Description détaillée du projet Annuaire.')">Voir plus</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/secq.jpg" alt="Projet Jeu Ludo-Éducatif" class="carousel-image">
+                                <div class="carousel-description">
+                                    <h3>Developpement d'un Jeu Ludo-Éducatif</h3>
                                     <p>Développement d'un jeu de Mémory en Java, dans lequel le joueur doit trouver la paire Français/Anglais.</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'un Jeu Ludo-Éducatif', 'Description détaillée du projet Annuaire.')">Voir plus</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/secq.jpg" alt="Projet Jeu Ludo-Éducatif" class="carousel-image">
+                                <div class="carousel-description">
+                                    <h3>Developpement d'une Application de Messagerie en Ligne</h3>
+                                    <p>Site web dans l'esprit de Whatsapp ou Discord, qui permet de s'inscrire à des fils de discussions.</p>
+                                    <button class="btn-see-more" onclick="openModal('Developpement d\'une Application de Messagerie en Ligne', 'Description détaillée du projet Annuaire.')">Voir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -91,5 +111,21 @@
         </div>
     </footer>
     <script src="../carousel.js"></script>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-img" src="" alt="Image du projet" class="modal-img">
+            <p id="modal-text"></p>
+            <h3>Soft Skills</h3>
+            <p id="modal-softskills"></p>
+            <h3>Hard Skills</h3>
+            <p id="modal-hardskills"></p>
+            <a id="modal-git" href="#" target="_blank" class="modal-git-link">Voir sur GitLab</a>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
