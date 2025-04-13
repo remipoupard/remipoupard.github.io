@@ -26,7 +26,7 @@ function accueilFunction(event) {
 blogButton.addEventListener("click", blogFunction);
 function blogFunction(event) {
     event.preventDefault();
-    triBlog("Chronologique")
+    triBlog("AnteChronologique")
 }
 
 function triBlog(tri){

@@ -21,6 +21,7 @@ export default class Blog{
             {id:4,image:"./img/bresil.jpg",titre:"Problème de AirFrance",date:"01-04-2025",text:"On est le lendemain et je ne suis toujours pas au Chili mais bien de retour à Paris. Pourquoi ? Parce que l'avion était défaillant et a du faire demi tour après 3h de vol. Mais bon, après avoir repassé les controles je repars dans un nouvel avion flambant neuf. J'arrive le soir vers 22h à l'aéroport de Santiago où je dors dans un hotel."},
             {id:5,image:"./img/montagne_santiago_vina.jpg",titre:"Première journée au Chili",date:"02-04-2025",text:"Je me mets en route pour Valparaiso. Je prend un bus vers Pajaritos une seconde gare routiere. J'achete un ticket de bus pour Valparaiso, on me dit que je doit aller a Vina del Mar. Du coup j'y vais, je fais un beau trajet, et une fois a Vina del Mar, je prend un bus de ville pour Valparaiso. J'arrive a destination sain et sauf et je m'installe tranquillement."},
             {id:6,image:"./img/vue_valparaiso.jpg",titre:"Deuxieme jour au Chili",date:"03-04-2025",text:"Ce jour là, j'ai pris contact avec mon maitre de stage et fais une petite ballade dans Valparaiso"},
+            {id:7,image:"./img/avenue_cotiere_vina.jpg",titre:"Fin de la première semaine",date:"13-04-2025",text:"Ca fait déjà un peu plus d'une semaine que je suis au Chili. J'ai mon sujet de stage (un site internet pour automatiser leur gestion des stages) et j'ai rencontré un de mes coloc qui s'avère être un étudiant en BUT Chimie qui, comme moi, fait son stage ici. Du coup on a visité Valpo et Vina del Mar ensemble. Il commence à faire un peu frais, c'est le début de l'automne mais y'a pas mal de soleil quand même."},
         ];
     }
     getHTML(tri){
@@ -29,8 +30,8 @@ export default class Blog{
         <form class="tri-blog">
         <label for="tri-blog">Trier:</label>
         <select name="tri" id="tri">
-        <option value="Chronologique">Chronologique</option>
         <option value="AnteChronologique">AnteChronologique</option>
+        <option value="Chronologique">Chronologique</option>
         </select> 
         <input type="submit" value="Appliquer">
         </form>
